@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:App6"
+             x:Class="App6.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="theLabel" Text="Spooky Corridor" HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <local:SwipeContainer Swipe="OnSwiped" 
+         HorizontalOptions="Center" 
+         VerticalOptions="CenterAndExpand">
+            <Image x:Name="theImage" Source="corri.jpg" Aspect="AspectFit"
+                       HeightRequest="{OnPlatform iOS=300, Android=250}"
+                       HorizontalOptions="Center" />
+
+        </local:SwipeContainer>
+    </StackLayout>
+
+</ContentPage>
